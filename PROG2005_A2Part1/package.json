@@ -1,0 +1,15 @@
+{
+  "name": "part1-inventory",
+  "version": "1.0.0",
+  "description": "TypeScript Inventory System for PROG2005 A2 Part1",
+  "main": "index.html",
+  "scripts": {
+    "build": "tsc inventory.ts --outFile inventory.js --target es2015",
+    "start": "npx http-server"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "author": "Yitong Wu",
+  "license": "ISC"
+}
