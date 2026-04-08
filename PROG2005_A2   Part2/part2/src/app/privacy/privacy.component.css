@@ -1,0 +1,47 @@
+.privacy {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 40px;
+  padding: 2.5rem;
+  box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.privacy h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #1e466e, #14b8a6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.privacy ul {
+  margin-top: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.privacy li {
+  background: #ffffffcc;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 60px;
+  border-left: 6px solid #2c7da0;
+  transition: all 0.2s;
+}
+.privacy li:hover {
+  transform: translateX(8px);
+  background: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .privacy {
+    background: rgba(30, 41, 59, 0.8);
+  }
+  .privacy li {
+    background: #1e293bcc;
+    color: #cbd5e1;
+    border-left-color: #14b8a6;
+  }
+}

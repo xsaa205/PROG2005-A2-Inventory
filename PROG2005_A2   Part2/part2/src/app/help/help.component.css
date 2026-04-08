@@ -1,0 +1,54 @@
+.help {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 40px;
+  padding: 2rem;
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+}
+
+.help h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #1e466e, #14b8a6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 32px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.faq-item:hover {
+  background: white;
+  transform: translateX(6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+  color: #2c7da0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .help {
+    background: rgba(30, 41, 59, 0.8);
+  }
+  .faq-item {
+    background: #1e293bcc;
+  }
+  .faq-item:hover {
+    background: #0f172a;
+  }
+  .faq-item h3 {
+    color: #7dd3fc;
+  }
+}

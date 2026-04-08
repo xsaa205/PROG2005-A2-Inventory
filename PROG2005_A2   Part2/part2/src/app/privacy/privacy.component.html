@@ -1,0 +1,12 @@
+<div class="privacy">
+  <h2>Privacy and Security Analysis</h2>
+  <p>This section explains key privacy and security considerations for mobile and web inventory applications.</p>
+  <ul>
+    <li><strong>Data Storage:</strong> All data is stored locally in the browser's memory. No data is transmitted to external servers, reducing risk of network interception.</li>
+    <li><strong>Input Validation:</strong> The application validates all user inputs (e.g., ID uniqueness, positive numbers) to prevent malformed data and potential injection attacks.</li>
+    <li><strong>XSS Prevention:</strong> Angular automatically escapes HTML content, mitigating cross-site scripting risks. Custom sanitization is applied where needed.</li>
+    <li><strong>Session Management:</strong> Data persists only during the current session. Upon page refresh, data is lost (unless extended with localStorage). This limits exposure of sensitive information across sessions.</li>
+    <li><strong>User Consent:</strong> No personal data is collected. Users should be informed if future versions implement cloud sync or analytics.</li>
+    <li><strong>Recommendations:</strong> For production, implement HTTPS, encrypt sensitive data, and consider user authentication.</li>
+  </ul>
+</div>

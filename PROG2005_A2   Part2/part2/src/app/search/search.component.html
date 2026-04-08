@@ -1,0 +1,29 @@
+<div class="search-container">
+  <h2>🔍 Search Inventory</h2>
+  <div class="search-box">
+    <input type="text" [(ngModel)]="keyword" placeholder="Enter item name..." />
+    <button (click)="search()">Search</button>
+    <button (click)="clear()">Clear</button>
+  </div>
+
+  <div *ngIf="searchResults.length > 0" class="results">
+    <h3>Results ({{ searchResults.length }})</h3>
+    <table class="responsive-table">
+      <thead>
+        <tr><th>ID</th><th>Name</th><th>Category</th><th>Price</th><th>Stock</th></tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of searchResults">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.category }}</td>
+          <td>{{ item.price | currency }}</td>   <!-- ✅ currency 管道现在可用 -->
+          <td>{{ item.stockStatus }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="keyword && searchResults.length === 0" class="no-results">
+    ❌ No items found for "{{ keyword }}"
+  </div>
+</div>
